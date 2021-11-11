@@ -1,5 +1,5 @@
 :: set this to the full path to your Diablo II save folder
-set DIABLO_II="%HOMEDRIVE%\Program Files (x86)\Diablo II\Saves"
+set DIABLO_II="%HOMEDRIVE%\Program Files (x86)\Diablo II\Save"
 
 :: set this to the full path to your D2R save folder
 set RESURRECTED="%HOMEDRIVE%\%HOMEPATH%\Saved Games\Diablo II Resurrected"
@@ -25,5 +25,5 @@ set DESTINATION=%BACKUP_FOLDER%\%SUBFILENAME%
 
 mkdir %DESTINATION%
 
-xcopy /s /i %DIABLO_II% %DESTINATION%
+xcopy /s /i %DIABLO_II% %DESTINATION%\LoD
 xcopy /s /i %RESURRECTED% %DESTINATION%\D2R
